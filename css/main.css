@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*******************/
+body{
+    background: #16222A;  
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  
+    background: linear-gradient(to right, #3A6073, #16222A); 
+
+}
+
+/*******************/
+.content{
+    padding: 60px 100px;
+    color: #fff;
+    background: #16222A; 
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  
+    background: linear-gradient(to right, #3A6073, #16222A);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*******************/
+.content h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.content h1::before,
+.content h1::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 425px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.content h1::before{
+    top: 0px;
+}
+.content h1::after{
+    bottom: -7px;
+}
+
+/*Start Form Div Style*/
+.form{
+    background: linear-gradient(to left, #3A6073, #16222A);
+    width: 40%;
+    padding: 25px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 4px 1px #233844;
+}
+
+.form form{
+    width: 100%;
+}
+
+.form form label{
+    display: block;
+    font-size: 14px;
+    color: #f3f3f3;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.form form input{
+    width: 100%;
+    height: 40px;
+    color: #1d2f39;
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 3px;
+    padding-left: 5px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+input::placeholder{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #1d2f39;
+}
+
+.form form button{
+    border: 4px solid #f3f3f3;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 14px;
+    border-radius: 3px;
+    color: #1c2d37;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+    transition: all 0.4s ease;
+}
+.form form button:hover{
+    background-color: transparent;
+    color: #f3f3f3;
+    border: 4px double #f3f3f3;
+}
+
+/*Start Events Div Style*/
+.content .events{
+    width: 60%;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.content .event{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0px 15px;
+    background: linear-gradient(225deg, #375a6c, #16222A);
+    border-radius: 3px;
+    box-shadow: 0px 0px 6px 2px #233844;
+    margin-bottom: 15px;
+}
+
+.events .event .eventName span{
+    letter-spacing: 0.5px;
+    margin-left: 2px;
+}
+
+.events .event .eventTime span{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-left: 3px;
+}
+
+.events .event button{
+    border: none;
+    background: none;
+    font-size: 25px;
+    color: #F44336;
+    cursor: pointer;
+    outline: none;
+}
